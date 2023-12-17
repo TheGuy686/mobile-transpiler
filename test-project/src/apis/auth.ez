@@ -1,0 +1,46 @@
+Api {
+    id: auth
+    host: 'http://localhost'
+    number port: 8080
+    path: '/v1/auth'
+
+    Endpoint {
+        id: login
+        method: PUT
+        path: /login
+        payload: Form {
+            email: data.email
+            password: data.password
+        }
+        payload: (data) {
+            return {
+                email: data?.email,
+                password: data?.password,
+            }
+        }
+    }
+
+    Endpoint {
+        id: register
+        method: POST
+        path: /token
+        payload: (data) {
+            return {
+                email: data?.email,
+                password: data?.password,
+            }
+        }
+    }
+
+    Endpoint {
+        id: refreshToken
+        method: PUT
+        path: /token
+        payload: (data) {
+            return {
+                email: data?.email,
+                password: data?.password,
+            }
+        }
+    }
+}

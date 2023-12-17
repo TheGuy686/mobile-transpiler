@@ -1,0 +1,24 @@
+Hooks {
+    beforeCreate: () {
+        if (true) {
+            console.log('going to there');
+        }
+        else if (true == true) {
+            console.log('getting to there');
+        }
+    }
+    beforeEnter: () { true }
+    beforeLeave: () {
+        switch (true) {
+            case 'one': // do something 
+                break;
+
+            case 'two': this.doSomthing();
+            default: 
+                this.isDefault();
+        }
+    }
+    loaded: () {
+        this.isJustGreat();
+    }
+}

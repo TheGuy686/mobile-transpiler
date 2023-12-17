@@ -1,0 +1,35 @@
+{
+  "name": "eezze-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "ts-node src/main.ts",
+    "watch": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/index.ts'",
+    "test-project": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/project/test.ts'",
+    "test-app": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/app/test.ts'",
+    "test-page": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/page/test.ts'",
+    "test-events": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/events/test.ts'",
+    "test-props": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/props/test.ts'",
+    "test-hooks": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/hooks/test.ts'",
+    "test-watchers": "nodemon --watch './**/*' -e ts,tsx,js,ez,json,yml --exec 'ts-node ./transpiler/parsers/watchers/test.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@types/node": "^20.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "jscodeshift": "^0.15.0",
+    "yaml": "^2.3.1"
+  }
+}

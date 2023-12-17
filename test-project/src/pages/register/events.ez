@@ -1,0 +1,71 @@
+Globals {
+    Event {
+        name: userLoggedIn
+        condition: () {
+            return true
+        }
+        do: (user) {
+            console.log(`User ${user.name} logged in`);
+        }
+    }
+    
+    Event {
+        name: anotherEvent
+        condition: true
+        do: (user) {
+            console.log('Hello ther);
+        }
+    }
+}
+
+Events {
+    target: emailInput
+    
+    Event {
+        name: onTextChanged
+        condition: (text) {
+            return text.includes('@');
+        }
+        do: (text) {
+            console.log(`Email changed: ${text}`);
+        }
+    }
+}
+
+Events {
+    target: passwordInput
+    
+    Event {
+        name: onTextChanged
+        condition: (text) {
+            return text.length > 5;
+        }
+        do: (text) {
+            console.log(`Password changed: ${text}`);
+        }
+    }
+}
+
+Event {
+    name: onTextChanged
+    condition: (text) {
+        return text.length > 5;
+    }
+    do: (text) {
+        console.log(`Password changed: ${text}`);
+    }
+}
+
+Events {
+    target: loginButton
+    
+    Event {
+        name: onClicked
+        condition: (text) {
+            return true;
+        }
+        do: () {
+            console.log(`Login button clicked`);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "global": {
+        "userLoggedIn": [
+            {
+                "condition": "",
+                "do": "(user) {\nconsole.log(`User ${user.name} logged in`);\n}"
+            }
+        ],
+        "anotherEvent": {
+            "condition": "() {\n return $public.counter > 10; \n}",
+            "do": "(data) { console.log('Hello ther); }"
+        }
+    },
+    "handlers": {
+        "emailInput": {
+            "onTextChanged": [
+                {
+                    "condition": "() => {\n return text.includes('@') \n}",
+                    "do": "(text) {\n `Email changed: ${text}` \n}"
+                }
+            ]
+        },
+        "passwordInput": {
+            "onTextChanged": [
+                {
+                    "condition": "(text) => {\n return text.length > 5; \n}",
+                    "do": "(text) => {\n console.log(`Password changed: ${text}`); \n}"
+                }
+            ]
+        },
+        "loginButton": {
+            "onClicked": [
+                {
+                    "condition": "() => {\n return true;\n}",
+                    "do": "() => {\n console.log(`Login button clicked`); \n}"
+                }
+            ]
+        }
+    }
+}

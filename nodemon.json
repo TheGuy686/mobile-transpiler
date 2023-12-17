@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ext": "ts,ez,js,json,yml",
+  "exec": "ts-node transpiler/parser.ts"
+}

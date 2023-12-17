@@ -1,0 +1,77 @@
+Page           {
+    id: login
+
+    Row {
+        id: row
+        backgroundColor: blue
+
+        Image {
+            id: img
+            source: 'http://host.com/hello-there'
+        }
+
+        Column {
+            id: col
+
+            Text { text: 'example 1' }
+
+            Text { 
+                text: 'example 2'
+
+                Text {
+                    id: ryanText1
+                    text: 'example 2'
+
+                    Text2 {
+                        id: ryanText2
+                        text: 'example 2' 
+                    }
+
+                    Text3 {
+                        id: ryanText2
+                        text: 'Cooke'
+
+                        Text3 {
+                            id: ryanText10
+                            text: 'Wesley' 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    Button {
+        id: btn;
+        anchors: {
+            top: row.bottom
+            left: parent.left
+            right: parent.right
+        }
+        text: 'A Button RYAN'
+
+        Button {
+            id: btn2;
+            something: {
+                top: row.bottom
+                left: parent.left
+                right: parent.right
+            }
+            text: 'A Button RYAN 2'
+
+            Row {
+                Row {
+                    Row {
+                        Row {
+                            Row {
+                                Row {
+                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

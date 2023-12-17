@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "jsx": "react",
+    "outDir": "lib"
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules"]
+}

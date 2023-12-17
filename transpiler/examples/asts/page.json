@@ -1,0 +1,148 @@
+{
+    "component": "Page",
+    "props": [
+        {
+            "name": "id",
+            "type": "string",
+            "value": [
+                {
+                    "type": "assignment",
+                    "value": "id"
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "component": "Row",
+            "props": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "value": [
+                        {
+                            "type": "assignment",
+                            "value": "id"
+                        }
+                    ]
+                },
+                {
+                    "name": "backgroundColor:",
+                    "type": "string",
+                    "value": [
+                        {
+                            "type": "color",
+                            "value": "blue"
+                        }
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "component": "Image",
+                    "props": [
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "value": [
+                                {
+                                    "type": "assignment",
+                                    "value": "id"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "source:",
+                            "type": "string",
+                            "value": [
+                                {
+                                    "type": "string",
+                                    "value": "http://host.com/hello-there"
+                                }
+                            ]
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "component": "Column",
+                    "props": [
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "value": [
+                                {
+                                    "type": "assignment",
+                                    "value": "id"
+                                }
+                            ]
+                        }
+                    ],
+                    "children": [
+                        {
+                            "component": "Text",
+                            "props": [
+                                {
+                                    "name": "text",
+                                    "type": "string",
+                                    "value": "example 1"
+                                }
+                            ]
+                        },
+                        {
+                            "component": "Text",
+                            "props": [
+                                {
+                                    "name": "text",
+                                    "type": "string",
+                                    "value": "example 2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "Button",
+            "props": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "value": [
+                        {
+                            "type": "assignment",
+                            "value": "id"
+                        }
+                    ]
+                },
+                {
+                    "name": "anchors",
+                    "type": "object",
+                    "props": [
+                        {
+                            "name": "top",
+                            "type": "ref",
+                            "value": "row.bottom"
+                        },
+                        {
+                            "name": "left",
+                            "type": "ref",
+                            "value": "row.left"
+                        },
+                        {
+                            "name": "right",
+                            "type": "ref",
+                            "value": "row.right"
+                        }
+                    ]
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "value": "A Button"
+                }
+            ]
+        }
+    ]
+}

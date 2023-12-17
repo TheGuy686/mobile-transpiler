@@ -1,0 +1,35 @@
+page:
+  title:
+    padding:
+      left: 20
+      right: 20
+      bottom: 10
+      top: 10
+
+text-input:
+  color: red
+  background: white
+  padding:
+    left: 20
+    right: 20
+    bottom: 10
+    top: 10
+
+button:
+  general:
+    padding:
+      left: 20
+      right: 20
+      bottom: 10
+      top: 10
+
+primary:
+  color: red
+  padding:
+    left: 20
+    right: 20
+    bottom: 10
+    top: 10
+    
+secondary:
+   color: yello

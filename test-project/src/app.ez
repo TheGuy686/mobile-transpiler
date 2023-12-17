@@ -1,0 +1,4 @@
+AuthApp {
+    splash: Splash,
+    app: Home,
+}

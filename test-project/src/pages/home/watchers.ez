@@ -1,0 +1,39 @@
+Watcher {
+    target: $private.prop
+    
+    onChange: () {
+        console.log('hello ther from 1');
+    }
+}
+
+Watcher {
+    target: $private.prop1
+    
+    onChange: () {
+        console.log('hello ther from 2');
+    }
+}
+
+Watcher {
+    target: $private.prop2
+    
+    onChange: () {
+        console.log('hello ther from 3');
+    }
+}
+
+Watcher {
+    target: $public.prop2
+    
+    onChange: () {
+        console.log('hello ther from 4');
+    }
+}
+
+Watcher {
+    target: ryansProp
+    
+    onChange: () {
+        console.log('hello ther from 5');
+    }
+}
